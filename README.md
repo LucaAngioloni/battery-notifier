@@ -26,7 +26,7 @@ $ ln /path/to/battery-notifier/battery-notifier.sh /usr/local/bin/battery-notifi
 ```
 3. Install the daemon:
 ```
-$ cp /path/to/battery-notifier/battery-notifier.plist ~/Library/LaunchAgents/battery-notifier.plist
+$ ln /path/to/battery-notifier/battery-notifier.plist ~/Library/LaunchAgents/battery-notifier.plist
 ```
 and run it:
 ```
