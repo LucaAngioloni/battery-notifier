@@ -33,6 +33,15 @@ and run it:
 $ launchctl load ~/Library/LaunchAgents/battery-notifier.plist
 ```
 
+#### Uninstall
+Run these commands to remove the files generated:
+```
+$ launchctl unload ~/Library/LaunchAgents/battery-notifier.plist
+$ rm /usr/local/bin/battery-notifier
+$ rm ~/Library/LaunchAgents/battery-notifier.plist
+$ rm -R /path/to/battery-notifier/
+```
+
 ## License
 
 MIT License
