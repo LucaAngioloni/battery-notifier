@@ -23,6 +23,7 @@ or read manual instructions in the repo linked above.
 2. Create a symbolic link to `/usr/local/bin/`
 ```
 $ ln /path/to/battery-notifier/battery-notifier.sh /usr/local/bin/battery-notifier
+$ ln /path/to/battery-notifier/battery.png /usr/local/bin/battery.png
 ```
 3. Install the daemon:
 ```
@@ -38,6 +39,7 @@ Run these commands to remove the files generated:
 ```
 $ launchctl unload ~/Library/LaunchAgents/battery-notifier.plist
 $ rm /usr/local/bin/battery-notifier
+$ rm /usr/local/bin/battery.png
 $ rm ~/Library/LaunchAgents/battery-notifier.plist
 $ rm -R /path/to/battery-notifier/
 ```
