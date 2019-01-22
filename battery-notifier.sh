@@ -29,17 +29,17 @@ echo $new_pwr > "$pwr_file"  # update tmp file with new battery percentage
 # if the battery is charging and we just passed the 80% send notification.
 if [ "$status_pwr" = "charging" ] && [ $(($new_pwr+0)) -ge 80 ] && [ $(($old_pwr+0)) -lt 80 ]
 then
-    /usr/local/bin/terminal-notifier -title "Battery Status" -message "Battery sufficiently charged (80%)" -appIcon "$icon_path" -group "battery_pwr"
+    /usr/local/bin/terminal-notifier -title "Battery Status" -message "Battery sufficiently charged (80%)" -appIcon "$icon_path" -group "battery_pwr" -sound "Hero"
 fi
 
 # if the battery is charging and we just passed the 90% send notification.
 if [ "$status_pwr" = "charging" ] && [ $(($new_pwr+0)) -ge 90 ] && [ $(($old_pwr+0)) -lt 90 ]
 then
-    /usr/local/bin/terminal-notifier -title "Battery Status" -message "Battery sufficiently charged (90%)" -appIcon "$icon_path" -group "battery_pwr"
+    /usr/local/bin/terminal-notifier -title "Battery Status" -message "Battery sufficiently charged (90%)" -appIcon "$icon_path" -group "battery_pwr" -sound "Hero"
 fi
 
 # if the battery is charging and we just reached 100% send notification.
 if [ "$status_pwr" = "charging" ] && [ $(($new_pwr+0)) -ge 100 ] && [ $(($old_pwr+0)) -lt 100 ]
 then
-    /usr/local/bin/terminal-notifier -title "Battery Status" -message "Battery fully charged (100%)" -appIcon "$icon_path" -group "battery_pwr"
+    /usr/local/bin/terminal-notifier -title "Battery Status" -message "Battery fully charged (100%)" -appIcon "$icon_path" -group "battery_pwr" -sound "Hero"
 fi
