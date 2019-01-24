@@ -3,9 +3,51 @@ battery-notifier is a MacOS daemon that keeps track of the battery charging stat
 
 ## Installation
 
+This software is intalled for your user only.
+
 ### Homebrew
 
-Coming soon...
+#### Install
+
+Install through homebrew:
+
+```
+$ brew install LucaAngioloni/tap/battery-notifier
+```
+
+And start the daemon with (only the first time at installation):
+
+```
+$ brew services start battery-notifier
+```
+
+#### Uninstall
+
+Deactivate the daemon:
+
+```
+$ brew services start battery-notifier
+```
+
+Uninstall homebrew package:
+
+```
+$ brew uninstall battery-notifier
+```
+
+##### Additional steps
+These steps are only to make sure that everything was removed from your system.
+
+- If you also want to remove terminal-notifier (and this is not done automatically)
+
+```
+$ brew uninstall terminal-notifier
+```
+
+- Check if the plist file was removed:
+```
+rm ~/Library/LaunchAgents/homebrew.mxcl.battery-notifier.plist
+```
 
 ### Manual
 
@@ -17,7 +59,7 @@ $ brew install terminal-notifier
 ```
 or read manual instructions in the repo linked above.
 
-#### Installation
+#### Install
 
 1. Download the code in a folder and store it wherever you want.
 2. Create a symbolic link to `/usr/local/bin/`
