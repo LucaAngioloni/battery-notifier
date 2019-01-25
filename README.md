@@ -1,6 +1,8 @@
 # battery-notifier
 battery-notifier is a MacOS daemon that keeps track of the battery charging status and notifies the user when the battery is sufficiently charged (80%-90%).
 
+![battery-notifier](https://i.imgur.com/D3Iz3v1.png)
+
 ## Installation
 
 This software is intalled for your user only.
