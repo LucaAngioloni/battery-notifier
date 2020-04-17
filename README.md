@@ -28,7 +28,7 @@ $ brew services start battery-notifier
 Deactivate the daemon:
 
 ```
-$ brew services start battery-notifier
+$ brew services stop battery-notifier
 ```
 
 Uninstall homebrew package:
